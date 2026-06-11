@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A curated universe of projects by Mac Nattapong."
+      content="Mac Nattapong builds and shapes ventures across community, space, wellbeing, and technology."
     />
-    <meta name="theme-color" content="#eee9df" />
-    <title>Mac Nattapong — Project Universe</title>
+    <meta name="theme-color" content="#f0ece3" />
+    <title>Mac Nattapong</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,10 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
     <script src="./assets/app.js" defer></script>
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Mac Nattapong, back to top">
@@ -27,8 +29,9 @@
         Mac Nattapong
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#field-notes">Field notes</a>
         <a class="nav-contact" href="#contact">Connect</a>
       </nav>
     </header>
@@ -36,103 +39,227 @@
     <main id="top">
       <section class="hero shell">
         <div class="hero-copy">
-          <p class="eyebrow reveal">Independent founder · Bangkok</p>
           <h1 class="reveal">
-            Building ventures with
-            <em>clarity, energy,</em>
-            and intent.
+            Building ideas that make
+            <em>life work better.</em>
           </h1>
-          <div class="hero-bottom reveal">
-            <p>
-              A living collection of ideas taking form across community,
-              culture, space, and technology.
-            </p>
-            <a class="text-link" href="#projects">
-              Enter the universe
-              <span aria-hidden="true">↓</span>
+          <p class="hero-intro reveal">
+            I shape ventures across community, space, wellbeing, and
+            technology. Different fields, connected by a practical belief:
+            thoughtful systems can help people live with more clarity.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="primary-link" href="#projects">
+              Explore the work
+              <span aria-hidden="true">&darr;</span>
             </a>
+            <span class="hero-location">Bangkok, Thailand &middot; 2026</span>
           </div>
         </div>
 
-        <div class="hero-orbit reveal" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="orbit orbit-three"></div>
-          <div class="orbit-core">
-            <span>MN</span>
+        <figure class="profile-frame reveal" data-parallax>
+          <p class="profile-role">Founder &middot; Builder &middot; Community</p>
+          <div class="profile-image-wrap">
+            <img
+              src="./assets/images/profile-mac-portrait.webp"
+              alt="Mac Nattapong seated in front of the pyramids at Giza"
+              width="880"
+              height="1092"
+              fetchpriority="high"
+            />
           </div>
-          <span class="orbit-note orbit-note-one">ideas</span>
-          <span class="orbit-note orbit-note-two">systems</span>
-          <span class="orbit-note orbit-note-three">meaning</span>
-        </div>
+          <figcaption>
+            <span>(Mac) Nattapong Vivattanaprasert</span>
+            <span>Curious across disciplines</span>
+          </figcaption>
+        </figure>
       </section>
 
-      <section class="founder shell" id="about">
-        <p class="section-kicker reveal">The founder</p>
-        <div class="founder-copy reveal">
-          <h2>One person, many connected questions.</h2>
-          <p>
-            I’m Mac Nattapong, an independent founder shaping projects that
-            help people live, gather, work, and feel more intentionally.
-            Each venture has its own character, but all begin with the same
-            instinct: notice what is missing, then make it beautifully useful.
+      <section class="about shell" id="about">
+        <p class="section-kicker reveal">About</p>
+        <div class="about-main">
+          <h2 class="reveal">
+            I move between business thinking and human questions.
+          </h2>
+          <div class="about-copy reveal">
+            <p>
+              My role changes from project to project: sometimes founder,
+              sometimes strategist, sometimes the person connecting ideas and
+              helping a team move forward.
+            </p>
+            <p>
+              What stays constant is the way I work. I listen closely, make
+              complexity clearer, and build with enough care that the result
+              feels useful as well as meaningful.
+            </p>
+          </div>
+        </div>
+        <div class="education reveal">
+          <p class="education-label">Education</p>
+          <p class="education-degree">BBA, Financial Analysis &amp; Investment</p>
+          <p class="education-school">
+            Chulalongkorn University &middot; Second-Class Honors
           </p>
+        </div>
+        <div class="earlier-chapters reveal">
+          <div class="earlier-heading">
+            <p class="education-label">Earlier chapters</p>
+            <p>Communities and competitions that shaped how I build today.</p>
+          </div>
+          <div class="activity-grid">
+            <article class="activity-card">
+              <span class="activity-mark tedx-mark">TED<span>x</span></span>
+              <div>
+                <h3>TEDxChulalongkorn</h3>
+                <p>Ideas and event community</p>
+              </div>
+            </article>
+            <article class="activity-card">
+              <span class="activity-logo activity-logo-aiesec">
+                <img
+                  src="./assets/images/logo-aiesec.png"
+                  alt="AIESEC"
+                  loading="lazy"
+                />
+              </span>
+              <div>
+                <h3>AIESEC Chulalongkorn</h3>
+                <p>Youth leadership community</p>
+              </div>
+            </article>
+            <article class="activity-card">
+              <span class="activity-logo activity-logo-champ">
+                <img
+                  src="./assets/images/logo-champ.png"
+                  alt="Coach by ChAMP"
+                  loading="lazy"
+                />
+              </span>
+              <div>
+                <h3>Coach by ChAMP</h3>
+                <p>Peer coaching experience</p>
+              </div>
+            </article>
+            <a
+              class="activity-card"
+              href="https://www.linkedin.com/in/nattapong-vivattanaprasert-036316155/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="activity-logo activity-logo-hult">
+                <img
+                  src="./assets/images/logo-hult-prize.png"
+                  alt="Hult Prize"
+                  loading="lazy"
+                />
+              </span>
+              <div>
+                <h3>Hult Prize Foundation</h3>
+                <p>1st runner-up &middot; APAC participant</p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="projects shell" id="projects">
         <div class="section-heading reveal">
-          <p class="section-kicker">Selected projects</p>
-          <p class="section-count"><span id="project-count">00</span> in orbit</p>
+          <div>
+            <p class="section-kicker">Selected projects</p>
+            <h2>Six ventures, each with its own world.</h2>
+          </div>
         </div>
         <div class="project-grid" id="project-grid"></div>
       </section>
 
-      <section class="constellation shell">
-        <div class="constellation-heading reveal">
-          <p class="section-kicker">The connecting thread</p>
-          <h2>Different forms.<br />One field of attention.</h2>
-        </div>
+      <section class="editorial-portrait shell reveal">
+        <figure>
+          <div class="editorial-image">
+            <img
+              src="./assets/images/mac-aviva-editorial.webp"
+              alt="Mac Nattapong at the Aviva Spirit workshop"
+              width="1200"
+              height="800"
+              loading="lazy"
+            />
+          </div>
+          <figcaption>
+            <p class="section-kicker">Close to the work</p>
+            <p>
+              Building from inside the real operation, with the people and
+              details that give each project its character.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
 
-        <div class="thread-map reveal" aria-hidden="true">
-          <div class="thread-ring">
-            <span class="thread-point p-one"></span>
-            <span class="thread-point p-two"></span>
-            <span class="thread-point p-three"></span>
-            <span class="thread-point p-four"></span>
-            <span class="thread-point p-five"></span>
-            <span class="thread-point p-six"></span>
-            <span class="thread-center">MN</span>
+      <section class="field-notes" id="field-notes">
+        <div class="field-header shell reveal">
+          <div>
+            <p class="section-kicker">In the work</p>
+            <h2>People, places, and projects in motion.</h2>
+          </div>
+          <div class="gallery-controls">
+            <button type="button" data-gallery-prev aria-label="Previous photograph">
+              &larr;
+            </button>
+            <button type="button" data-gallery-next aria-label="Next photograph">
+              &rarr;
+            </button>
           </div>
         </div>
+        <div class="gallery-track reveal" id="gallery-track" tabindex="0"></div>
+      </section>
 
-        <div class="constellation-copy reveal">
-          <p>
-            Some projects cultivate human connection. Some bring intelligence
-            to physical spaces. Others translate engineering or ancient
-            principles into a more contemporary language.
-          </p>
-          <p>
-            They are not one business, but they share a way of seeing:
-            thoughtful systems, enduring craft, and progress that still makes
-            room for spirit.
-          </p>
+      <section class="principles shell" aria-labelledby="principles-title">
+        <div class="principles-heading reveal">
+          <p class="section-kicker">The connecting thread</p>
+          <h2 id="principles-title">Different industries. A consistent instinct.</h2>
+        </div>
+        <div class="principle-list">
+          <article class="principle reveal">
+            <p class="principle-number">01</p>
+            <h3>Make it clearer</h3>
+            <p>
+              Find the real question, remove noise, and give the work a form
+              people can understand.
+            </p>
+          </article>
+          <article class="principle reveal">
+            <p class="principle-number">02</p>
+            <h3>Keep it human</h3>
+            <p>
+              Systems matter, but they should serve the people living and
+              working inside them.
+            </p>
+          </article>
+          <article class="principle reveal">
+            <p class="principle-number">03</p>
+            <h3>Build for endurance</h3>
+            <p>
+              Prefer useful foundations, thoughtful details, and steady
+              progress over temporary spectacle.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section class="contact shell" id="contact">
-        <p class="section-kicker reveal">Open channel</p>
-        <div class="contact-main reveal">
-          <h2>Follow the work<br />as it unfolds.</h2>
-          <a class="contact-link" href="#projects">
-            <span>Explore the universe</span>
-            <span class="contact-arrow" aria-hidden="true">↑</span>
-          </a>
+      <section class="contact" id="contact">
+        <div class="contact-inner shell">
+          <p class="section-kicker reveal">Connect</p>
+          <div class="contact-heading reveal">
+            <h2>Follow the work<br />or start a conversation.</h2>
+            <p>
+              Find Mac Nattapong on Facebook, or reach me directly through
+              Instagram, LINE, and email.
+            </p>
+          </div>
+          <div class="social-grid reveal" id="social-grid"></div>
+          <footer>
+            <p>Mac Nattapong &middot; Bangkok, Thailand</p>
+            <p>Projects in motion &middot; <span id="year"></span></p>
+          </footer>
         </div>
-        <footer>
-          <p>Mac Nattapong · Bangkok, Thailand</p>
-          <p>Projects in motion · <span id="year"></span></p>
-        </footer>
       </section>
     </main>
   </body>
